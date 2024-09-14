@@ -36,4 +36,11 @@
         <p>&copy; 2024 Lauren Kong. All rights reserved.</p>
     </footer>
 </body>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data =>{
+            document.getElementById('navbar-placeholder').innerHTML
+        })
+</script>
 </html>
