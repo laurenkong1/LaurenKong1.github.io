@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Baby Pink Background</title>
+    <title>Lauren Kong</title>
     <style>
         body {
             background-color: #FADADD;
@@ -14,19 +14,20 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="index.html">About Me</a>
-        <a href="work-experience.html">Work Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
     <!-- About Me Section -->
-    <div class="tab-content">
+    <div class="tab-content about-me-section">
+        <img src="your-image.jpg" alt="Your Photo" class="about-me-image">
+        <div class="about-me-text">
         <h1>About Me</h1>
         <p>Hello! My name is Lauren Kong. I am a senior at Boston University studying computer science with a minor in public health. I am originally from Gaithersburg, Maryland.</p>
     </div>
+</div>
 
-</body>
-</html>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data =>{
+            document.getElementById('navbar-placeholder')
+        })
+</script>
+
