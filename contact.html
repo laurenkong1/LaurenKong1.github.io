@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Baby Pink Background</title>
-    <style>
-        body {
-            background-color: #FADADD;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Steve | Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div id="navbar-placeholder"></div>
-    
     <header>
-        <h1>Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="work-experience.html">Work Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Feel free to reach out to me through the following:</p>
-        <ul>
-            <li>Email: <a href="mailto:LMKong@BU.edu">LMKong@BU.edu</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">My LinkedIn Profile</a></li>
-        </ul>
-    </section>
+
+    <main>
+        <section class="content">
+            <h1>Contact</h1>
+            <p>
+                Get in touch with me via:
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:steve@example.com">steve@example.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/steve">linkedin.com/in/steve</a></li>
+                <li>GitHub: <a href="https://github.com/username">github.com/username</a></li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Lauren Kong. All rights reserved.</p>
+        <p>&copy; 2024 Lauren's Website</p>
     </footer>
 </body>
-<script>
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data =>{
-            document.getElementById('navbar-placeholder').innerHTML
-        })
-</script>
 </html>
